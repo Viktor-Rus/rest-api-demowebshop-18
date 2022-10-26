@@ -9,7 +9,7 @@ import org.openqa.selenium.Cookie;
 import static com.codeborne.selenide.Selenide.*;
 import static io.restassured.RestAssured.given;
 
-public class DemoWebShopTest {
+public class DemoWebShopTest extends TestBase {
     String authCookieName = "NOPCOMMERCE.AUTH";
     String tokenName = "__RequestVerificationToken";
     String tokenValueBody = "64_IgAxRLwWumrArl-Cc8ku132wQn9rQg1rnpFPOwxs6OVOKWCcf913Z-0ELTTlSfVqijjZcPVy2Kd4zX-SqEWY0pQO1a9xKA5NKE7XXY1I1";
