@@ -1,9 +1,6 @@
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.github.javafaker.Faker;
-import io.restassured.RestAssured;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
@@ -32,15 +29,6 @@ public class DemoWebShopTest {
         lastName = faker.name().lastName();
     }
 
-
-
-    @BeforeAll
-    static void setUp() {
-
-        Configuration.baseUrl = "http://demowebshop.tricentis.com";
-        RestAssured.baseURI = "http://demowebshop.tricentis.com";
-
-    }
     @Test
     void registrationUser() {
         String authCookieValue=
