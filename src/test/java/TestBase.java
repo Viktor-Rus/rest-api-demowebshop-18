@@ -20,10 +20,17 @@ public class TestBase {
             Configuration.browserCapabilities = capabilities;
             Configuration.baseUrl = "http://demowebshop.tricentis.com";
             RestAssured.baseURI = "http://demowebshop.tricentis.com";
-            ConfigProvider config = new ConfigProvider();
+
+            Configuration.browserSize = "1920x1080";
+            Configuration.browser = "opera";
+            Configuration.browserVersion = "88";
+            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+
+
+//            ConfigProvider config = new ConfigProvider();
 
             // remote run
-            config.setConfiguration("remote");
+//            config.setConfiguration("remote");
             // local run
 //            config.setConfiguration("local");
 
