@@ -26,6 +26,11 @@ public class TestBase {
             config.setConfiguration("remote");
             // local run
 //            config.setConfiguration("local");
+
+//            Configuration.browserSize = System.getProperty("browser_size");
+//            Configuration.browser = System.getProperty("browser_name");
+//            Configuration.browserVersion = System.getProperty("browser_version");
+//            Configuration.remote = System.getProperty("remote_selenide");
         }
 
         @AfterEach
