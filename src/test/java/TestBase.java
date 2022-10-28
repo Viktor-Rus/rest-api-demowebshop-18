@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.ConfigProvider;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import io.restassured.RestAssured;
@@ -19,10 +20,12 @@ public class TestBase {
             Configuration.browserCapabilities = capabilities;
             Configuration.baseUrl = "http://demowebshop.tricentis.com";
             RestAssured.baseURI = "http://demowebshop.tricentis.com";
-            Configuration.browserSize = System.getProperty("browser_size");
-            Configuration.browser = System.getProperty("browser_name");
-            Configuration.browserVersion = System.getProperty("browser_version");
-            Configuration.remote = System.getProperty("remote_selenide");
+            ConfigProvider config = new ConfigProvider();
+
+            // remote run
+            config.setConfiguration("remote");
+            // local run
+//            config.setConfiguration("local");
         }
 
         @AfterEach
