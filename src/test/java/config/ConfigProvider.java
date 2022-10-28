@@ -13,9 +13,6 @@ public class ConfigProvider {
         Configuration.browser = config.getBrowserName();
         Configuration.browserVersion = config.getBrowserVersion();
         Configuration.browserSize = config.getBrowserSize();
-        Configuration.browserPosition = config.getBrowserPosition();
-        Configuration.baseUrl = config.getBaseUrl();
-        RestAssured.baseURI = config.getBaseURI();
         return this;
     }
 }
