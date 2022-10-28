@@ -11,7 +11,7 @@ public class ConfigProvider {
 //        Configuration.remote = config.getRemoteUrl();
 //        Configuration.browser = config.getBrowserName();
         Configuration.browserVersion = config.getBrowserVersion();
-//        Configuration.browserSize = config.getBrowserSize();
+        Configuration.browserSize = config.getBrowserSize();
         return this;
     }
 }

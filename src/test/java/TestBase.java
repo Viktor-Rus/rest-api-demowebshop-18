@@ -21,7 +21,7 @@ public class TestBase {
             Configuration.baseUrl = "http://demowebshop.tricentis.com";
             RestAssured.baseURI = "http://demowebshop.tricentis.com";
 
-            Configuration.browserSize = "1920x1080";
+//            Configuration.browserSize = "1920x1080";
             Configuration.browser = "opera";
 //            Configuration.browserVersion = "88";
             Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
