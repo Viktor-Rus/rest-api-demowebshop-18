@@ -5,14 +5,14 @@ package config;
 })
 public interface Config extends org.aeonbits.owner.Config {
 
-    @Key("browserName")
-    String getBrowserName();
+//    @Key("browserName")
+//    String getBrowserName();
 
     @Key("browserVersion")
     String getBrowserVersion();
 
-    @Key("browserSize")
-    String getBrowserSize();
+//    @Key("browserSize")
+//    String getBrowserSize();
 
 //    @Key("remoteUrl")
 //    String getRemoteUrl();
