@@ -1,7 +1,6 @@
 package config;
 
 import com.codeborne.selenide.Configuration;
-import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 
 public class ConfigProvider {
