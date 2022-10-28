@@ -24,13 +24,13 @@ public class TestBase {
             Configuration.browserSize = "1920x1080";
             Configuration.browser = "opera";
             Configuration.browserVersion = "88";
-            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+//            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
 
-//            ConfigProvider config = new ConfigProvider();
+            ConfigProvider config = new ConfigProvider();
 
             // remote run
-//            config.setConfiguration("remote");
+            config.setConfiguration("remote");
             // local run
 //            config.setConfiguration("local");
 

@@ -14,6 +14,6 @@ public interface Config extends org.aeonbits.owner.Config {
     @Key("browserSize")
     String getBrowserSize();
 
-    @Key("remoteUrl")
-    String getRemoteUrl();
+//    @Key("remoteUrl")
+//    String getRemoteUrl();
 }
