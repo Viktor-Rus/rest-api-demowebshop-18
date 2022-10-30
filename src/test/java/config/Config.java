@@ -1,7 +1,11 @@
 package config;
 
-@org.aeonbits.owner.Config.Sources({
-        "classpath:${environment}.properties"
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources({
+        "system:properties",
+        "classpath:${env}.properties",
+        "file:~/${env}.properties",
+        "file:./${env}.properties"
 })
 public interface Config extends org.aeonbits.owner.Config {
 
@@ -16,4 +20,7 @@ public interface Config extends org.aeonbits.owner.Config {
 
     @Key("remoteUrl")
     String getRemoteUrl();
+
+    @Key("isRemote")
+    boolean isRemote();
 }
